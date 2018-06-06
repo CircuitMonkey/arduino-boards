@@ -1,0 +1,80 @@
+#  Circuit Monkey
+#
+#  boards.txt for Arduino Compatible Modules
+
+menu.cpu=Processor
+
+##############################################################
+
+albedo.name=Albedo
+albedo.vid.0=0x04D8
+albedo.pid.0=0xEE98
+
+albedo.build.mcu=atmega32u4
+albedo.build.f_cpu=16000000L
+albedo.build.vid=0x04D8
+albedo.build.pid=0xEE98
+albedo.build.usb_manufacturer="Circuit Monkey"
+albedo.build.usb_product="Solstice Core"
+albedo.build.board=AVR_LEONARDO
+#albedo.build.board=AVR_SOLSTICE
+albedo.build.core=arduino:arduino
+albedo.build.variant=arduino:leonardo
+albedo.build.extra_flags={build.usb_flags}
+
+albedo.upload.tool=arduino:avrdude
+albedo.upload.protocol=avr109
+albedo.upload.maximum_size=28672
+albedo.upload.maximum_data_size=2560
+albedo.upload.speed=57600
+albedo.upload.disable_flushing=true
+albedo.upload.use_1200bps_touch=true
+albedo.upload.wait_for_upload_port=true
+
+albedo.bootloader.tool=arduino:avrdude
+albedo.bootloader.low_fuses=0xff
+albedo.bootloader.high_fuses=0xd8
+albedo.bootloader.extended_fuses=0xcb
+albedo.bootloader.file=caterina-solstice/Caterina-Solstice-32u4.hex
+# We updated lock/unlock bits to get rid of compiler warning.
+albedo.bootloader.unlock_bits=0xFF
+albedo.bootloader.lock_bits=0xEF
+
+
+##############################################################
+
+starfire.name=StarFire
+starfire.vid.0=0x04D8
+starfire.pid.0=0xEE98
+
+starfire.build.mcu=atmega32u4
+starfire.build.f_cpu=16000000L
+starfire.build.vid=0x04D8
+starfire.build.pid=0xEE98
+starfire.build.usb_manufacturer="Circuit Monkey"
+starfire.build.usb_product="Solstice Core"
+starfire.build.board=AVR_LEONARDO
+#starfire.build.board=AVR_SOLSTICE
+starfire.build.core=arduino:arduino
+starfire.build.variant=arduino:leonardo
+starfire.build.extra_flags={build.usb_flags}
+
+starfire.upload.tool=arduino:avrdude
+starfire.upload.protocol=avr109
+starfire.upload.maximum_size=28672
+starfire.upload.maximum_data_size=2560
+starfire.upload.speed=57600
+starfire.upload.disable_flushing=true
+starfire.upload.use_1200bps_touch=true
+starfire.upload.wait_for_upload_port=true
+
+starfire.bootloader.tool=arduino:avrdude
+starfire.bootloader.low_fuses=0xff
+starfire.bootloader.high_fuses=0xd8
+starfire.bootloader.extended_fuses=0xcb
+starfire.bootloader.file=caterina-solstice/Caterina-Solstice-32u4.hex
+# We updated lock/unlock bits to get rid of compiler warning.
+starfire.bootloader.unlock_bits=0xFF
+starfire.bootloader.lock_bits=0xEF
+
+

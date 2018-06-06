@@ -1,5 +1,0 @@
-# Configuration settings for Circuit Monkey boards
-
-# Left blank as we suspect that the Arduino core platform.txt already
-# has applied the default settings that we need.
-
